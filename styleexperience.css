@@ -1,0 +1,179 @@
+
+:root {
+  --bg-color: #191970;             
+  --second-bg-color: #131313;      
+  --text-color: #ffffff;           
+  --main-color: #00ffee;       
+  --accent-color: #ffffff;         
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--text-color);
+}
+
+.heading span {
+  color: var(--main-color);
+  text-shadow: 0 0 10px var(--main-color);
+}
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--text-color);
+}
+
+.heading span {
+  color: var(--main-color);
+  text-shadow: 0 0 10px var(--main-color);
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 10%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.logo span {
+  color: var(--main-color);
+  text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+  margin-left: 2.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+
+section {
+  min-height: 100vh;
+  padding: 10rem 10%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: var(--second-bg-color);
+  color: var(--text-color);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 238, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.experience-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.exp-date {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.experience-card p {
+  font-size: 1.4rem;
+  color: #ddd;
+}
+
+
+.experience-card p {
+  font-size: 1.4rem;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+
+
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    background-color: var(--second-bg-color);
+    padding: 1rem 0;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+  }
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--second-bg-color);
+  color: var(--main-color);
+  font-size: 1.4rem;
+  margin-top: 4rem;
+}

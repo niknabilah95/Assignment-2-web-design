@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Missing charset meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <!-- Fix incorrect stylesheet link (was 'href="style"') -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Boxicons (make sure this is included for icons to work) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <a href="index.html" class="logo">Nabilah <span>Ghazali</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a> <!-- Fixed typo: 'acttive' -->
+      <a href="Biodata.html">Biodata</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Education.html">Education</a>
+      <a href="Family.html">Family</a>
+      <a href="Gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <section class="home">
+    <div class="home-content">
+      <h1>Hello, It's <span>Nabilah</span></h1>
+      <h3 class="text-animation">I'm a Student<span></span></h3>
+      <p>
+        "Welcome to my personal website! Here, every page tells a story,
+        every picture holds a memory, and every moment is inspiration.
+        Thanks for stopping by – come get to know me better!"
+      </p>
+
+      <!-- Fixed: missing ">" in opening div tag -->
+      <div class="social-icons">
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn">Hire</a>
+        <a href="#content" class="btn">Contact</a>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="home-img">
+      <img src="image/profile.jpg" alt="profile.jpg">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Nabilah Ghazali. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

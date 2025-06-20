@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family - Nabilah Ghazali</title>
+  <link rel="stylesheet" href="stylefamily.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">Nabilah <span>Ghazali</span></a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Biodata.html">Biodata</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Education.html">Education</a>
+      <a href="Family.html" class="active">Family</a>
+      <a href="Gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <!-- Family Section -->
+  <section class="family-section">
+    <h2 class="heading">My <span>Family</span></h2>
+
+    <div class="box-container">
+      <div class="box">
+        <a href="images/family.jpg" class="lightbox">
+        <h3>Family</h3>
+        <img src="image/family 7.jpg" alt="family 7.jpg">
+         <img src="image/family 16.jpg" alt="family 16.jpg">
+         <img src="image/family 10.jpg" alt="family 10.jpg">
+         </a>
+        
+      </div>
+
+      <div class="box">
+        <a href="image/Sibling.jpg" class="lightbox">
+        <h3>Sibling</h3>
+        <img src="image/family 14.jpg" alt="family 14.jpg">
+         <img src="image/family 18.jpg" alt="family 18.jpg">
+         <img src="image/family 19.jpg" alt="family 19">
+       </a>
+         
+      </div>
+
+      <div class="box">
+        <a href="image/Myself.jpg" class="lightbox">
+        <h3>Myself</h3>
+         <img src="image/memorie 7.jpg" alt="memorie 7.jpg">
+         <img src="image/memorie 6.jpg" alt="memorie 6.jpg">
+         <img src="image/profile.jpg" alt="profile.jpg">
+         </a>
+          
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Script -->
+  <script>
+    const overlay = document.createElement('div');
+    overlay.classList.add('lightbox-overlay');
+    document.body.appendChild(overlay);
+
+    const image = document.createElement('img');
+    overlay.appendChild(image);
+
+    document.querySelectorAll('.lightbox').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const src = this.getAttribute('href');
+        image.src = src;
+        overlay.style.display = 'flex';
+      });
+    });
+
+    overlay.addEventListener('click', () => {
+      overlay.style.display = 'none';
+    });
+  </script>
+  
+  <footer class="footer">
+    <p>© 2025 Nabilah Ghazali. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
